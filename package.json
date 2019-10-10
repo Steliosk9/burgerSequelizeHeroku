@@ -21,11 +21,12 @@
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
     "lodash": "^4.17.15",
+    "mem": "^5.1.1",
     "method-override": "^2.3.9",
     "mysql": "^2.14.1",
     "mysql2": "^1.4.1",
     "nodemon": "^1.19.3",
     "sequelize": "^4.6.0",
-    "sequelize-cli": "^2.8.0"
+    "sequelize-cli": "^5.5.1"
   }
 }
