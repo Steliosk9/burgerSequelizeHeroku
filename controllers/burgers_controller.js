@@ -1,15 +1,15 @@
+//Node dependencies 
 var express = require("express");
-var router = express.Router();
 
+var router = express.Router();
+// edit burger model to match sequelize
 var db = require("../models/");
 
 // get route -> index
 router.get("/", function(req, res) {
   // send us to the next get function instead.
-  res.redirect("/burger");
+  res.redirect("/burgers");
 });
-
-
 
 // get route, edited to match sequelize
 router.get("/burgers", function(req, res) {
@@ -24,7 +24,6 @@ router.get("/burgers", function(req, res) {
     });
 });
 
-
 // post route to create burgers
 router.post("/burgers/create", function(req, res) {
   // edited burger create to add in a burger_name
@@ -32,28 +31,27 @@ router.post("/burgers/create", function(req, res) {
     burger_name: req.body.burger_name
   })
     // pass the result of our call
-    .then(function(dbBurger) {
+  .then(function(dbBurger) {
       // log the result to our terminal/bash window
-      console.log(dbBurger);
+    console.log(dbBurger);
       // redirect
-      res.redirect("/");
-    });
+    res.redirect("/");
+  });
 });
 
-
 // put route to devour a burger
-router.put("/burgers/update/:id", function(req, res) {
+router.put("/burgers/update", function(req, res) {
   // update one of the burgers
   db.Burger.update({
     devoured: true
   },
-  {
-    where: {
-      id: req.params.id
+    {
+      where: {
+        id: req.body.burger_id
+      }
     }
-  }
   ).then(function(dbBurger) {
-    res.json("/");
+    res.redirect("/");
   });
 });
 
