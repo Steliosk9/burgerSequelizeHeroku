@@ -1,20 +1,25 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "burgers_db",
-    "host": "127.0.0.1",
+    "username": "b5sxteanrgchu82g",
+    "password": "l0zdqo50e88gg915",
+    "database": "o9qripgqr9sa1r4g",
+    "host": "sulnwdk5uwjw1r2k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
+
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "b5sxteanrgchu82g",
+    "password": "l0zdqo50e88gg915",
+    "database": "o9qripgqr9sa1r4g",
+    "host": "sulnwdk5uwjw1r2k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
+  
   "production": {
-    "use_env_variable": "JAWSDB_URL",
+    "username": "b5sxteanrgchu82g",
+    "password": "l0zdqo50e88gg915",
+    "database": "o9qripgqr9sa1r4g",
+    "host": "sulnwdk5uwjw1r2k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
