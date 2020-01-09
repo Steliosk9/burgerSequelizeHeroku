@@ -11,8 +11,14 @@ My app will store every burger in a database, whether devoured or not.
 
 ## Built With
 
-- express
-- handlebars
-- body-parser
+- Html 
+- CSS3
+- Bootstrap
+- Javascript
+- JQuery
+- Express
+- Handlebars
+- Body-parser
 - MySQL
 - Sequelize
+- VsCode
