@@ -20,7 +20,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mem": "^5.1.1",
     "method-override": "^2.3.9",
     "mysql": "^2.14.1",
